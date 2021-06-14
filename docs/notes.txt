@@ -1,0 +1,33 @@
+apt install libgl1-mesa-glx
+apt update
+
+pip install requests
+
+https://i.stack.imgur.com/zkMBy.png
+
+https://wiki.python.org/moin/Generators
+
+with: image = tf.keras.applications.vgg19.preprocess_input(image) it's 51%. w/o it it's 31%
+
+
+https://github.com/tensorflow/models/blob/master/research/slim/preprocessing/vgg_preprocessing.py
+
+https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c#:~:text=%20Getting%20Started%20With%20Google%20Colab%20%201,You%20are%20good%20to%20go%21%20%20More%20
+
+ #One hot encoding to produce label as tensor
+    encoded_label = tf.one_hot(tf.cast(label, tf.int32), 1000)
+    encoded_label = tf.cast(encoded_label, tf.float32)
+    encoded_label = tf.reshape(encoded_label, [1, 1000])
+
+https://colab.research.google.com/github/tensorflow/datasets/blob/master/docs/keras_example.ipynb#scrollTo=RbsMy4X1XVFv
+
+https://github.com/tensorflow/models/issues/517
+
+dataset_test_raw,info = tfds.load('imagenet_v2', split='test',shuffle_files=True, as_supervised=True,with_info=True)
+
+pip install tfds-nightly
+
+import tensorflow_datasets as tfds
+
+image = tf.keras.applications.vgg19.preprocess_input(image)
+
